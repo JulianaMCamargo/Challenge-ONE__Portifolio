@@ -1,0 +1,36 @@
+.sobremim{
+    background-color: var(--background-azul);
+    padding-top: 1rem;
+}
+
+.sobremim__titulo{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+
+    margin-bottom: 1rem;
+}
+
+.sobremim__descricao{
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.sobremim__assinatura{
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .sobremim__titulo{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .sobremim__descricao{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}

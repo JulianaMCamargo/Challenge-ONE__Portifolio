@@ -1,0 +1,128 @@
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: var(--background-cinza);
+}
+
+.apresentacao__img-perfil{
+    background: url('../img/perfil.jpeg') no-repeat center / cover;
+    
+    border-radius: 100%;
+
+    height: 98px;
+    width: 98px;
+}
+
+.apresentacao__titulo{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.apresentacao__descricao{
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1rem;
+
+    margin-bottom: 3rem;
+}
+
+.apresentacao__curriculo{
+    display: flex;
+    justify-content: space-around;
+    
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 3rem;
+    color: var(--azul);
+
+    width: 100%;
+
+    border-bottom: 1px solid var(--azul, #2A7AE4);
+    border-top: 1px solid var(--azul, #2A7AE4);
+
+    transition: 10ms;
+}
+
+.apresentacao__curriculo:hover{
+    font-size: 2rem;
+}
+
+.apresentacao__redes{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+}
+
+
+.apresentacao__redes-links{
+    font-weight: 600;
+    font-size: 0.9rem;
+    
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .apresentacao{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .apresentacao__img-perfil{
+        height: 148px;
+        width: 148px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .apresentacao{
+        padding: 6rem 4rem;
+    }
+
+    .apresentacao__img-perfil{
+        height: 368px;
+        width: 368px;
+        margin-right: 2rem;
+    }
+
+    .apresentacao__textos{
+        padding-right: 2rem;
+        box-sizing: border-box;
+        width: 60%;
+    }
+
+    .apresentacao__titulo{
+        font-size: 3.25rem;
+        line-height: 3.5rem;
+    }
+
+    .apresentacao__redes{
+        justify-content: start;
+    }
+
+    .apresentacao__redes-links{
+        padding: 0 16px;
+    }
+
+    .apresentacao__descricao{
+        font-size: 1.375rem;
+        line-height: 1.75rem;
+    }
+
+    .apresentacao__redes-links:first-child{
+        padding-left: 0;
+    }
+
+}

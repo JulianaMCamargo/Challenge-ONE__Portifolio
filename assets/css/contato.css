@@ -1,0 +1,132 @@
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    background-color: var(--background-azul);
+
+    padding: 2rem 2rem;
+}
+
+.contato__img{
+    display: none;
+}
+
+.contato__titulo{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.contato__descricao{
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.contato__formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    width: 100%;
+
+    gap:2rem;
+    margin-top: 2rem;
+}
+
+.contato__formulario-itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    border-radius: 4px;
+    background: var(--branco);
+
+    padding: 0.5rem 0.8rem 0 0.8rem;
+
+    font-size: 0.8rem;
+    color: var( --preto-50);
+}
+
+.contato__formulario-itens input, .contato__formulario-assunto, .contato__formulario-mensagem{
+    width: 100%;
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 4px;
+
+    font-size: 1rem;
+    line-height: 2rem;
+    color: var(--cor-fonte);
+}
+
+.contato__formulario-assunto{
+    padding: 1rem 0.8rem;
+    color: var( --preto-50);
+}
+
+.contato__formulario-mensagem{
+    padding: 1rem 0.8rem;
+    height: 7.75rem;
+    color: var( --preto-50);
+}
+
+.contato__formulario-botao{
+    width: 50%;
+
+    padding: 0.8rem 1rem;
+
+    background: var(--azul, #2A7AE4);
+
+    color: var(--branco);
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    border: none;
+}
+
+@media screen and (min-width:768px) {
+    .contato__formulario-botao{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contato{
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    .contato__conteudo{
+        width: 50%;
+    }
+
+    .contato__titulo{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .contato__descricao{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .contato__img{
+        display: flex;
+        width: 30%;
+        align-self: stretch;
+        border-radius: 20px;
+    }
+}

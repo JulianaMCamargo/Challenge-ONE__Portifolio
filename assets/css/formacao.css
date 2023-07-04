@@ -1,0 +1,102 @@
+.formacao{
+    background-color: var(--background-azul);
+
+    padding: 2rem 2rem;
+}
+
+.formacao__titulo{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+
+    margin-bottom: 1rem;
+
+    text-align: center;
+}
+
+.formacao__lista{
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+.formacao__lista-itens{
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.formacao__itens-img{
+    width: 100%;
+    height: 120px;
+
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    
+    background-color: var(--branco);
+
+    justify-content: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.utfpr{
+    background: url('../img/utfpr-logo.png') no-repeat center / 25%;
+    background-color: white;
+}
+
+.puc{
+    background: url('../img/puc.jpg') no-repeat center / 25%;
+    background-color: white;
+}
+
+.alura{ 
+    background: url('../img/one-logo.jpg') no-repeat center / 25%;
+    background-color: white;
+}
+
+.formacao__itens-titulo{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.formacao__itens-descricao{
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px){
+    .formacao__lista{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .formacao__lista-itens{
+        width: 32%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .formacao__lista{
+        justify-content: center;
+    }
+
+    .formacao__lista-itens{
+        width: 336px;
+    }
+
+    .formacao__itens-img{
+        height: 254px;
+    }
+
+    .formacao__titulo{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}

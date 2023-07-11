@@ -55,10 +55,10 @@
     padding: 0.5rem 0.8rem 0 0.8rem;
 
     font-size: 0.8rem;
-    color: var( --preto-50);
+    color: var(--preto-50);
 }
 
-.contato__formulario-itens input, .contato__formulario-assunto, .contato__formulario-mensagem{
+.contato__formulario-itens input, .contato__formulario-assunto input, .contato__formulario-mensagem textarea{
     width: 100%;
     box-sizing: border-box;
     
@@ -71,13 +71,21 @@
 }
 
 .contato__formulario-assunto{
-    padding: 1rem 0.8rem;
-    color: var( --preto-50);
+    width: 100%;
 }
 
-.contato__formulario-mensagem{
+.contato__formulario-assunto input{
+    color: var( --preto-50);
     padding: 1rem 0.8rem;
+}
+
+.contato__formulario-mensagem {
+    width: 100%;
+}
+
+.contato__formulario-mensagem textarea {
     height: 7.75rem;
+    padding: 1rem 0.8rem;
     color: var( --preto-50);
 }
 
@@ -93,6 +101,10 @@
     font-weight: 600;
 
     border: none;
+}
+
+.mensagem-erro{
+    color: red;
 }
 
 @media screen and (min-width:768px) {

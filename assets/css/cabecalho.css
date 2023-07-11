@@ -27,6 +27,13 @@
     font-size: 1rem;
     font-weight: 500;
     padding: 0 1rem;
+    transition: 50ms;
+}
+
+.cabecalho__navegacao-link:hover{
+    text-decoration: underline;
+    font-size: 1.25rem;
+    color: var(--azul);
 }
 
 .cabecalho__navegacao-link a{
@@ -34,6 +41,10 @@
 }
 
 .cabecalho__email{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
     font-weight: 400;
     text-decoration: none;
     font-size: 0.9rem;
@@ -60,9 +71,11 @@
         font-size: 1.3rem;
     }
 
-    /*.cabecalho__email{
-        padding-left: 1rem;
-        
+    .cabecalho__navegacao-link:hover{
+        font-size: 1.5rem;
+    }
+
+    .cabecalho__email{
         font-weight: 700;
-    }*/
+    }
 }

@@ -36,6 +36,11 @@
     font-weight: 700;
 }
 
+.hobbies__itens-icones{
+    color: var(--azul);
+    font-size: 2rem;
+}
+
 .hobbies__itens-texto{
     padding-top: 0.5rem;
 }

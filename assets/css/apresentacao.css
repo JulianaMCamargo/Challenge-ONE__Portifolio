@@ -29,14 +29,14 @@
     font-size: 0.9rem;
     line-height: 1rem;
 
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .apresentacao__curriculo{
     display: flex;
     justify-content: space-around;
     
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
@@ -48,29 +48,30 @@
     border-bottom: 1px solid var(--azul, #2A7AE4);
     border-top: 1px solid var(--azul, #2A7AE4);
 
-    transition: 10ms;
+    transition: 100ms;
 }
 
 .apresentacao__curriculo:hover{
+    font-size: 1.35rem;
+}
+
+.apresentacao__redesSociais{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 1rem 0;
+}
+
+.apresentacao__redesSociais-icones {
+    color: var(--azul);
+    font-size: 1.5rem;
+
+    transition: 100ms;
+}
+
+.apresentacao__redesSociais-icones:hover{
     font-size: 2rem;
-}
-
-.apresentacao__redes{
-    display: flex;
-    justify-content: space-between;
-
-    margin-bottom: 1rem;
-}
-
-
-.apresentacao__redes-links{
-    font-weight: 600;
-    font-size: 0.9rem;
-    
-    display: flex;
-    align-items: center;
-
-    text-decoration: none;
 }
 
 
@@ -88,7 +89,7 @@
 
 @media screen and (min-width: 1024px) {
     .apresentacao{
-        padding: 6rem 4rem;
+        padding: 4rem 4rem 8rem 4rem;
     }
 
     .apresentacao__img-perfil{
@@ -108,21 +109,35 @@
         line-height: 3.5rem;
     }
 
-    .apresentacao__redes{
-        justify-content: start;
+    .apresentacao__descricao{
+        margin-bottom: 3rem;
+    }
+    
+    .apresentacao__curriculo{
+        font-size: 1.5rem;
     }
 
-    .apresentacao__redes-links{
-        padding: 0 16px;
+    .apresentacao__curriculo:hover{
+        font-size: 1.75rem;
+    }
+
+    .apresentacao__redesSociais{
+        justify-content: center;
+        padding-top: 3rem;
+    }
+
+    .apresentacao__redesSociais-icones {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .apresentacao__redesSociais-icones:hover{
+        font-size: 3.5rem;
     }
 
     .apresentacao__descricao{
         font-size: 1.375rem;
         line-height: 1.75rem;
     }
-
-    .apresentacao__redes-links:first-child{
-        padding-left: 0;
-    }
-
 }

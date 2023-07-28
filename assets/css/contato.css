@@ -101,6 +101,12 @@
     font-weight: 600;
 
     border: none;
+
+    cursor: pointer;
+}
+
+.contato__formulario-botao:hover{
+    background: var(--verde-100);
 }
 
 .mensagem-erro{

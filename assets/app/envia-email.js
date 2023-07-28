@@ -1,4 +1,4 @@
-import enviaEmail from "./assets/app/conectaAPI.js";
+import enviaEmail from "./conectaAPI.js";
 
 const formulario = document.querySelector("[data-formulario]");
 

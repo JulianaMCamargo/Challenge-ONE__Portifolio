@@ -52,7 +52,7 @@
                 <div class="apresentacao__textos">
                     <h2 class="apresentacao__titulo">Olá, meu nome é Juliana</h2>
                     <p class="apresentacao__descricao">Sou formada em Engenharia Civil e atualmente estou iniciando minha carreira como programadora Front-End</p>
-                    <a href="assets/docs/Camargo,Juliana__CV.pdf" class="apresentacao__curriculo">Currículo</a>
+                    <a href="assets/docs/Camargo, Juliana - CV (P).pdf" class="apresentacao__curriculo">Currículo</a>
                     <nav class="redesSociais">
                         <ul class="apresentacao__redesSociais">
                             <li><a href="https://github.com/JulianaMCamargo" class="apresentacao__redesSociais-links"><i class="fa-brands fa-github apresentacao__redesSociais-icones "></i></a></li>
@@ -204,6 +204,17 @@
                             </div>
                         </div>
                     </li>
+                    <li class="experiencia__lista-itens">
+                        <img src="assets/img/challenge-alurageek.png" alt="Imagem do Challenge" class="experiencia__itens-img">
+                        <div>
+                            <h7 class="experiencia__itens-titulo">AluraGeek</h7>
+                            <p class="experiencia__itens-descricao">Challenge Alura - criação de um ecommerce</p>
+                            <div class="experiencia__botao">
+                                <a href="https://github.com/JulianaMCamargo/Challenge__Ecommerce" class="botao__repositorio botao">Repositório</a>
+                                <a href="https://julianamcamargo.github.io/Challenge__Ecommerce/" class="botao__demo botao">Ver Demo</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </section>
     
@@ -215,29 +226,29 @@
                         Preencha o formulário ao lado e entrarei em contato o mais rápido possível.
                     </p>
                     
-                    <form class="contato__formulario" data-formulario>
+                    <form class="contato__formulario" id="contato__formulario" data-formulario>
                     
-                        <div class="contato__formulario-itens">
+                        <fieldset class="contato__formulario-itens">
                             <label for="nome" >Nome</label>
                             <input type="text" id="nome" name="nome" placeholder="André Lisboa" minlength="3" required>
                             <spam class="mensagem-erro"></spam>
-                        </div>
+                        </fieldset>
                         
-                        <div class="contato__formulario-itens">
+                        <fieldset class="contato__formulario-itens">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="andrelisboa@contato.com" required>
                             <spam class="mensagem-erro"></spam>
-                        </div>
+                        </fieldset>
                         
-                        <div class="contato__formulario-assunto">
+                        <fieldset class="contato__formulario-assunto">
                             <input type="text" name="assunto" placeholder="Assunto" minlength="4" required>
                             <spam class="mensagem-erro"></spam>
-                        </div>
+                        </fieldset>
                         
-                        <div class="contato__formulario-mensagem">
+                        <fieldset class="contato__formulario-mensagem">
                             <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required></textarea>
                             <spam class="mensagem-erro"></spam>
-                        </div>
+                        </fieldset>
     
                         <input type="submit" class="contato__formulario-botao" placeholder="Enviar Mensagem" value="Enviar mensagem">
                     </form>
@@ -248,8 +259,8 @@
         <footer class="rodape">
             <h9>Desenvolvido por Juliana Camargo</br>2023</h9>
         </footer>
-        
         <script src="main.js" type="module"></script>
+        <script src="assets/app/valida-forms-contato.js"></script>
     </body>
 
 </html>
